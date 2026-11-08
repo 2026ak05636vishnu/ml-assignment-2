@@ -1,0 +1,300 @@
+===============================================================================
+                    ML ASSIGNMENT 2 - QUICK REFERENCE
+===============================================================================
+
+DEADLINE: 08 November 2026, 23:59 PM
+
+===============================================================================
+SUBMISSION REQUIREMENTS (15 MARKS)
+===============================================================================
+
+1. GitHub Repository (with all files):
+   ✓ Complete source code
+   ✓ requirements.txt
+   ✓ README.md (with full documentation)
+   ✓ test_data.csv (test dataset)
+   ✓ models/ folder (5 saved models)
+
+2. Live Streamlit App Link:
+   ✓ Deployed on Streamlit Community Cloud
+   ✓ Interactive frontend
+   ✓ All features working
+
+3. PDF Submission Document (includes):
+   ✓ GitHub link (clickable)
+   ✓ Streamlit app link (clickable)
+   ✓ BITS Lab screenshot
+   ✓ README content
+   ✓ Model performance table
+   ✓ Observations on each model
+
+===============================================================================
+IMPLEMENTATION CHECKLIST
+===============================================================================
+
+LOCAL SETUP:
+□ Install dependencies: pip install -r requirements.txt
+□ Generate models: python generate_data_and_models.py
+□ Test app: streamlit run app.py
+□ Verify app at http://localhost:8501
+
+FILES CREATED:
+□ test_data.csv (50 test samples)
+□ scaler.joblib (feature scaler)
+□ model_results.csv (metrics)
+□ models/logistic_regression.joblib
+□ models/decision_tree.joblib
+□ models/knn.joblib
+□ models/naive_bayes.joblib
+□ models/support_vector_machine.joblib
+
+GITHUB SETUP:
+□ Create GitHub repository (public)
+□ Initialize git: git init
+□ Add files: git add .
+□ Commit: git commit -m "Initial commit"
+□ Add remote: git remote add origin <URL>
+□ Push: git push -u origin main
+□ Verify all files on GitHub
+
+STREAMLIT DEPLOYMENT:
+□ Go to https://streamlit.io/cloud
+□ Sign in with GitHub
+□ Click "New App"
+□ Select repository
+□ Select main branch
+□ Select app.py
+□ Click Deploy
+□ Wait for deployment (3-5 minutes)
+□ Test app functionality
+
+SUBMISSION DOCUMENT:
+□ Create PDF file
+□ Add GitHub link (clickable)
+□ Add Streamlit app link (clickable)
+□ Add BITS Lab screenshot
+□ Copy README.md content
+□ Add model performance table
+□ Add observations on each model
+□ Save as PDF
+
+===============================================================================
+KEY REQUIREMENTS MET
+===============================================================================
+
+✓ 5 Classification Models:
+  • Logistic Regression
+  • Decision Tree Classifier
+  • K-Nearest Neighbors (KNN)
+  • Naive Bayes (Gaussian)
+  • Support Vector Machine (SVM)
+
+✓ 6 Evaluation Metrics:
+  • Accuracy
+  • AUC Score
+  • Precision
+  • Recall
+  • F1 Score
+  • Matthews Correlation Coefficient (MCC)
+
+✓ Dataset Specifications:
+  • Features: 15 (requirement: ≥12)
+  • Samples: 600 (requirement: ≥500)
+  • Classes: 3 (multi-class)
+  • Test Data: 50 samples
+
+✓ Streamlit Features:
+  • CSV upload functionality
+  • Model selection dropdown
+  • Evaluation metrics display
+  • Confusion matrix visualization
+  • Classification report
+  • Model comparison table
+
+===============================================================================
+BEST MODEL PERFORMANCE
+===============================================================================
+
+🏆 WINNER: Support Vector Machine (SVM)
+
+Performance Metrics:
+- Accuracy: 86.67% (HIGHEST)
+- AUC Score: 0.9027 (HIGHEST)
+- Precision: 86.94%
+- Recall: 86.67%
+- F1 Score: 86.73%
+- MCC Score: 0.7995 (HIGHEST)
+
+Why SVM Wins:
+• Handles non-linear decision boundaries effectively
+• RBF kernel captures complex patterns
+• Best balanced performance across all metrics
+• Highest correlation coefficient (MCC)
+
+===============================================================================
+MARKS BREAKDOWN (15 MARKS)
+===============================================================================
+
+Model Implementation:         10 marks
+├─ 5 models × 1 mark each:    5 marks
+├─ All metrics calculation:   5 marks
+└─ Dataset requirements:      ✓
+
+Streamlit App Development:    4 marks
+├─ CSV upload:               1 mark
+├─ Model selection:          1 mark
+├─ Metrics display:          1 mark
+└─ Confusion matrix:         1 mark
+
+BITS Lab Screenshot:          1 mark
+└─ Screenshot of execution:  1 mark
+
+TOTAL:                        15 marks
+
+===============================================================================
+MODEL PERFORMANCE TABLE
+===============================================================================
+
+| Model | Accuracy | AUC | Precision | Recall | F1 | MCC |
+|-------|----------|-----|-----------|--------|----|----|
+| LR    | 0.7833   | 0.8214 | 0.7844 | 0.7833 | 0.7829 | 0.6720 |
+| DT    | 0.8417   | 0.8751 | 0.8450 | 0.8417 | 0.8421 | 0.7602 |
+| KNN   | 0.8167   | 0.8506 | 0.8197 | 0.8167 | 0.8169 | 0.7227 |
+| NB    | 0.7833   | 0.8179 | 0.7878 | 0.7833 | 0.7841 | 0.6703 |
+| SVM   | 0.8667   | 0.9027 | 0.8694 | 0.8667 | 0.8673 | 0.7995 |
+
+LR=Logistic Regression, DT=Decision Tree, NB=Naive Bayes
+
+===============================================================================
+IMPORTANT LINKS
+===============================================================================
+
+GitHub:           https://github.com
+Streamlit Cloud:  https://streamlit.io/cloud
+scikit-learn:     https://scikit-learn.org/
+Streamlit Docs:   https://docs.streamlit.io/
+
+BITS Support:
+Email:            csislabsupport@wilp.bits-pilani.ac.in
+Subject:          NSP1 ML Assignment 2: [Issue Description]
+
+===============================================================================
+QUICK COMMANDS
+===============================================================================
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Generate models and test data
+python generate_data_and_models.py
+
+# Test app locally
+streamlit run app.py
+
+# Initialize git
+git init
+
+# Add files
+git add .
+
+# Commit changes
+git commit -m "ML Assignment 2: Classification models"
+
+# Add remote
+git remote add origin https://github.com/YOUR_USERNAME/ml-assignment-2.git
+
+# Push to GitHub
+git push -u origin main
+
+===============================================================================
+FILES PROVIDED
+===============================================================================
+
+Core Application:
+├─ app.py (Streamlit app with dashboard)
+├─ generate_data_and_models.py (training script)
+├─ requirements.txt (dependencies)
+
+Documentation:
+├─ README.md (complete project documentation)
+├─ INSTRUCTIONS.md (step-by-step guide)
+├─ SUBMISSION_GUIDE.md (submission checklist)
+├─ PROJECT_SUMMARY.md (overview)
+└─ QUICK_REFERENCE.txt (this file)
+
+Data & Models:
+├─ test_data.csv (50 test samples)
+├─ scaler.joblib (StandardScaler)
+└─ models/ (5 trained models)
+
+Configuration:
+└─ .gitignore (git configuration)
+
+===============================================================================
+TROUBLESHOOTING
+===============================================================================
+
+ISSUE: Models not found error
+FIX: Run: python generate_data_and_models.py
+
+ISSUE: Import errors
+FIX: Install dependencies: pip install -r requirements.txt
+
+ISSUE: Streamlit app won't start
+FIX: Check port 8501 is free or use: streamlit run app.py --server.port 8502
+
+ISSUE: Can't connect to GitHub
+FIX: Use personal access token instead of password
+
+ISSUE: Deployment fails on Streamlit Cloud
+FIX: Check all dependencies in requirements.txt and models/ folder exists
+
+ISSUE: Metrics not calculating
+FIX: Ensure test_data.csv has 'target' column with correct labels
+
+===============================================================================
+SUCCESS CRITERIA
+===============================================================================
+
+✓ GitHub repository public and contains all files
+✓ Streamlit app deployed and fully functional
+✓ All 5 models load and evaluate correctly
+✓ CSV upload accepts test data
+✓ Metrics display correctly
+✓ Confusion matrix visualizes
+✓ Classification report shows
+✓ Model comparison table displays
+✓ PDF submission includes all required information
+✓ Links are clickable and verified working
+✓ Submitted before deadline (8 Nov 23:59 PM)
+
+===============================================================================
+ESTIMATED TIME BREAKDOWN
+===============================================================================
+
+Local Setup:         10 minutes
+├─ Install deps:     2 min
+├─ Generate models:  5 min
+└─ Test app:         3 min
+
+GitHub Setup:        10 minutes
+├─ Create repo:      3 min
+├─ Push code:        5 min
+└─ Verify files:     2 min
+
+Streamlit Deploy:    20 minutes
+├─ Deploy:           5 min
+├─ Wait:             10 min
+└─ Test app:         5 min
+
+Submission:          15 minutes
+├─ Prepare PDF:      10 min
+└─ Submit:           5 min
+
+TOTAL TIME:          ~55 minutes
+
+===============================================================================
+
+For detailed instructions, see SUBMISSION_GUIDE.md
+
+Ready to submit! 🚀
